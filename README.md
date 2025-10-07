@@ -55,7 +55,7 @@ self-healing-prometheus/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/self-healing-prometheus.git
+git clone https://github.com/Aj4236/self-healing-prometheus.git
 cd self-healing-prometheus
 Build and run the webhook container:
 
@@ -78,8 +78,7 @@ Production-ready logging and monitoring setup
 
 📈 Learning Outcomes
 Hands-on experience with Prometheus monitoring and Alertmanager
-![image alt](https://github.com/Aj4236/self-healing-prometheus/blob/main/Screenshot%20(1).png)
-
+![image alt](https://github.com/Aj4236/self-healing prometheus/blob/c01920a28034305c93a8d17ee70742cf42f8b450/Screenshot%20(1).png)
 Building self-healing infrastructure with Ansible automation
 
 Webhook integration for real-time alert handling
