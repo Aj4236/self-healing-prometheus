@@ -78,6 +78,7 @@ Production-ready logging and monitoring setup
 
 📈 Learning Outcomes
 Hands-on experience with Prometheus monitoring and Alertmanager
+![image alt](https://github.com/Aj4236/self-healing-prometheus/blob/main/Screenshot%20(1).png)
 
 Building self-healing infrastructure with Ansible automation
 
