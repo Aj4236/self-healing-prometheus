@@ -100,4 +100,3 @@ Extend self-healing to other critical services
 GitHub Repository: self-healing-prometheus
 
 Inspired by modern DevOps best practices
-![image alt](https://github.com/Aj4236/self-healing-prometheus/blob/main/Screenshot%20(1).png?raw=true)
