@@ -1,3 +1,5 @@
+![image alt](https://github.com/Aj4236/self-healing-prometheus/blob/main/Screenshot%20(1).png?raw=true)
+
 # Self-Healing Prometheus
 
 A **self-healing monitoring setup** that automatically detects and resolves NGINX downtime using **Prometheus**, a **Flask webhook**, and **Ansible automation**.
@@ -75,8 +77,6 @@ Ansible automation for infrastructure management
 Dockerized for easy deployment
 
 Production-ready logging and monitoring setup
-
-![image alt](https://github.com/Aj4236/self-healing-prometheus/blob/main/Screenshot%20(1).png?raw=true)
 
 📈 Learning Outcomes
 Hands-on experience with Prometheus monitoring and Alertmanager
