@@ -1,5 +1,3 @@
-![image alt](https://github.com/Aj4236/self-healing-prometheus/blob/main/Screenshot%20(1).png?raw=true)
-
 # Self-Healing Prometheus
 
 A **self-healing monitoring setup** that automatically detects and resolves NGINX downtime using **Prometheus**, a **Flask webhook**, and **Ansible automation**.
@@ -102,3 +100,4 @@ Extend self-healing to other critical services
 GitHub Repository: self-healing-prometheus
 
 Inspired by modern DevOps best practices
+![image alt](https://github.com/Aj4236/self-healing-prometheus/blob/main/Screenshot%20(1).png?raw=true)
