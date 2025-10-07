@@ -1,0 +1,20 @@
+groups:
+- name: devops_alerts
+  rules:
+  - alert: NginxDown
+    expr: probe_success{job="blackbox", instance="http://nginx:80"} == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "NGINX is down on {{ $labels.instance }}"
+      description: "Probe failed for {{ $labels.instance }} for more than 1 minute."
+
+  - alert: HighCPU
+    expr: 100 * (1 - avg by (instance) (irate(node_cpu_seconds_total{mode="idle"}[5m]))) > 90
+    for: 2m
+    labels:
+      severity: warning
+    annotations:
+      summary: "High CPU on {{ $labels.instance }}"
+      description: "CPU usage > 90% for more than 2 minutes. Value = {{ $value }}"

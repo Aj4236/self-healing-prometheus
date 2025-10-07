@@ -1,0 +1,17 @@
+- name: Heal NGINX container on host
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: Check if nginx container exists
+      command: docker ps -a --filter "name=nginx" --format "{{ '{{' }}.Names{{ '}}' }}"
+      register: nginx_containers
+      changed_when: false
+
+    - name: Restart nginx container if it exists
+      when: nginx_containers.stdout != ""
+      command: docker restart nginx
+
+    - name: Start nginx container if not present
+      when: nginx_containers.stdout == ""
+      command: docker run -d --name nginx -p 8080:80 nginx:stable-alpine
